@@ -43,7 +43,7 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  form.addEventListener("submit", function (event) {
+  if (form) form.addEventListener("submit", function (event) {
     event.preventDefault();
     var data = new FormData(form);
     var body = [
